@@ -22,6 +22,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/tweets', tweetsRouter);
-app.use('hashtags', hashtagsRouter);
+app.use('/hashtags', hashtagsRouter);
 
 module.exports = app;
