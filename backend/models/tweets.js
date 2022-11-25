@@ -3,9 +3,10 @@ require("../models/connection");
 
 const tweetSchema = mongoose.Schema({
     date: Date,
-    text: String,
+    message: String,
+    hashtag: [String],
+    isLiked: Boolean,
     user: { type: mongoose.Schema.Types.ObjectId, ref: 'users' },
-    hashtag: { type: mongoose.Schema.Types.ObjectId, ref: 'hashtags'}
 });
 
 const Tweet = mongoose.model('tweets', tweetSchema);
