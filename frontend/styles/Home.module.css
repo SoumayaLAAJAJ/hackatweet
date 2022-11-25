@@ -1,4 +1,4 @@
-.main {
+/* .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,4 +19,30 @@
 
 .title a:hover, .title a:focus, .title a:active {
   text-decoration: underline;
+} */
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 20px;
+  
 }
+
+.home {
+  border-left: 1px gray solid;
+  border-right: 1px gray solid;
+  height: 100vh;
+  width: 33vw;
+  
+}
+
+.trend {
+  display: flex;
+  border: solid gray;
+  height: 100vh;
+  width: 100vw;
+}
+
+
