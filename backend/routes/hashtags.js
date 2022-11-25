@@ -13,7 +13,7 @@ router.get('/hash', (req, res) => {
       } else {
         res.json({ result: false, error: 'No # in bdd' });
       }
- })
+})
 })
 
 module.exports = router;

@@ -7,16 +7,18 @@ const User = require('../models/users');
 const Hashtag = require('../models/tweets');
 
 router.post('/addTweet', (req, res) => {
-    const date = new Date(now);
+    const date = new Date();
     User.findOne({token: req.body.token}).then(user => {
+        console.log(user)
         const pattern = /^#/gi ;
-
+        const verifHashtag = req.body.text.match(pattern);
+        console.log(verifHashtag);
         
             const newTweet = new Tweet({
                 date: date,
                 text: req.body.text,
                 user: user._id,
-                hashtag: req.body.text.match(pattern),
+                hashtag: verifHashtag,
                 
 
             });
