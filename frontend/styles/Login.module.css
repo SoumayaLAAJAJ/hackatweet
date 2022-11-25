@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #151d27;
+}
+
+.imageSize{
+    width: 68%;
+}
+
+.login{
+    color:white;
+
+}
+
+
+.imagePosition{
+    position: relative;
+    right: 240px
+}
+
+.title{
+    position: relative;
+    right: 220px;
+    font-size: 60px;
+}
